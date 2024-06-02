@@ -13,7 +13,7 @@ public sealed class ConfiguracaoContaTransportadorService : IConfiguracaoContaTr
         _repository = repository;
     }
 
-    public async Task<bool> CreateAsync(Guid transportadorId)
+    public async Task<ConfiguracaoContaTransportador> CreateAsync(Guid transportadorId)
     {
         var configuracaoDeContaTransportador = new ConfiguracaoContaTransportador(
             id: Guid.NewGuid(),
@@ -27,6 +27,6 @@ public sealed class ConfiguracaoContaTransportadorService : IConfiguracaoContaTr
 
         await _repository.AddAsync(configuracaoDeContaTransportador);
 
-        return true;
+        return configuracaoDeContaTransportador;
     }
 }

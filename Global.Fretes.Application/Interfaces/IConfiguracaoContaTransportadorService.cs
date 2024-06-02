@@ -1,6 +1,8 @@
-﻿namespace Global.Fretes.Application.Interfaces;
+﻿using Global.Fretes.Domain.Entities;
+
+namespace Global.Fretes.Application.Interfaces;
 
 public interface IConfiguracaoContaTransportadorService
 {
-    Task<bool> CreateAsync(Guid transportadorId);
+    Task<ConfiguracaoContaTransportador> CreateAsync(Guid transportadorId);
 }

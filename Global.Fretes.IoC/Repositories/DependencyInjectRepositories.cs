@@ -15,6 +15,7 @@ public static class DependencyInjectRepositories
         services.AddScoped<IAppLogRepository, AppLogRepository>();
         services.AddScoped<ITransportadorRepository, TransportadorRepository>();
         services.AddScoped<IConfiguracaoContaTransportadorRepository, ConfiguracaoContaTransportadorRepository>();
+        services.AddScoped<ITemplateDeEmailRepository, TemplateDeEmailRepository>();
 
         return services;
     }

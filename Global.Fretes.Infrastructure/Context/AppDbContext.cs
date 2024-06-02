@@ -15,6 +15,7 @@ public sealed class AppDbContext : DbContext
     public DbSet<ConfiguracaoFreteTransportador> ConfiguracoesFretesTransportador { get; set; }
     public DbSet<Veiculo> Veiculos { get; set; }
     public DbSet<AppLog> Logs { get; set; }
+    public DbSet<TemplateDeEmail> TemplatesDeEmail { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

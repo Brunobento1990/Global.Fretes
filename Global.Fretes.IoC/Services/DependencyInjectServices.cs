@@ -11,6 +11,7 @@ public static class DependencyInjectServices
         services.AddScoped<IAppLogService, AppLogService>();
         services.AddScoped<ITransportadorService, TransportadorService>();
         services.AddScoped<IConfiguracaoContaTransportadorService, ConfiguracaoContaTransportadorService>();
+        services.AddScoped<IEmailService, EmailService>();
 
         return services;
     }
